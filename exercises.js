@@ -27,6 +27,8 @@ console.log(testGreeting); // printing the output value of the function.
  * These two variables will be used to invoke the functions #2 - #5.
 */ 
 
+var bango1 = 1;
+var bango2 = 3;
 
 /*
  * #2
@@ -43,7 +45,13 @@ console.log(testGreeting); // printing the output value of the function.
  * Console.log `sum` to test your code.
 */
 
+function add(num1, num2) {
+  return num1 + num2;
+}
 
+var sum = add(bango1, bango2);
+
+cosnole.log("sum")
 
 
 /*
