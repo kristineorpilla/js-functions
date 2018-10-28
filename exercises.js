@@ -51,8 +51,7 @@ function add(num1, num2) {
 
 var sum = add(bango1, bango2);
 
-cosnole.log("sum")
-
+console.log("sum")
 
 /*
  * #3
@@ -68,10 +67,13 @@ cosnole.log("sum")
  * Console.log `difference` to test your code.
 */ 
 
+function subtract(num1, num2) {
+	return num1 - num2
+}
 
+var difference = subtract(bango1, bango2); 
 
-
-
+console.log("difference")
 
 /*
  * #4
