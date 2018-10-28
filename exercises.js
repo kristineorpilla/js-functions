@@ -51,7 +51,7 @@ function add(num1, num2) {
 
 var sum = add(bango1, bango2);
 
-console.log("sum")
+console.log(sum);
 
 /*
  * #3
@@ -68,12 +68,12 @@ console.log("sum")
 */ 
 
 function subtract(num1, num2) {
-	return num1 - num2
+	return num1 - num2;
 }
 
 var difference = subtract(bango1, bango2); 
 
-console.log("difference")
+console.log(difference);
 
 /*
  * #4
@@ -89,8 +89,13 @@ console.log("difference")
  * Console.log `product` to test your code.
 */
 
+function multiply(num1, num2) {
+	return num1 * num2;
+}
 
+var product = multiply(bango1, bango2);
 
+console.log(product);
 
 /*
  * #5
@@ -106,7 +111,13 @@ console.log("difference")
  * Console.log `quotient` to test your code.
 */
 
+function divide(num1, num2) {
+	return num1 / num2;
+}
 
+var quotient = divide(bango1, bango2);
+
+console.log(quotient);
 
 /*
  * #6
@@ -121,7 +132,11 @@ console.log("difference")
 */
 
 
+function checkSum(x) {
+	return "Mariah Carey has been married";
+}
 
+console.log(sum)
 
 
 /*
