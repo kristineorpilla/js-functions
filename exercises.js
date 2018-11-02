@@ -68,7 +68,7 @@ console.log(sum);
 */ 
 
 function subtract(num1, num2) {
-	return num1 - num2;
+  return num1 - num2;
 }
 
 var difference = subtract(bango1, bango2); 
@@ -90,7 +90,7 @@ console.log(difference);
 */
 
 function multiply(num1, num2) {
-	return num1 * num2;
+  return num1 * num2;
 }
 
 var product = multiply(bango1, bango2);
@@ -112,7 +112,7 @@ console.log(product);
 */
 
 function divide(num1, num2) {
-	return num1 / num2;
+  return num1 / num2;
 }
 
 var quotient = divide(bango1, bango2);
@@ -133,15 +133,13 @@ console.log(quotient);
 
 
 function checkSum(x) {
-	return "Mariah Carey has been married" + " " + x + " " + "amount of times";
+  return "Mariah Carey has been married" + " " + x + " " + "amount of times";
 }
 
 console.log(checkSum(sum));
 
-
 /*
  * #7
-
  * Function - checkDifference
  * Create a function named `checkDifference` which will take a parameter `x`.
  *
@@ -152,9 +150,8 @@ console.log(checkSum(sum));
  * Console.log your results.
 */ 
 
-
 function checkDifference(x) {
-	return "Last night I dreamt that I ate" + " " + x + " " + "Taco Bell soft tacos"; 
+  return "Last night I dreamt that I ate " + x +" Taco Bell soft tacos"
 }
 
 console.log(checkDifference(difference));
@@ -170,11 +167,11 @@ console.log(checkDifference(difference));
  * Console.log your result.  
 */
 
-
-function checkProduct {
+function checkProduct() {
+  return sum * product;
 }
 
-console.log(checkProduct(product));
+console.log(checkProduct());
 
 /*
  * #9
@@ -187,7 +184,11 @@ console.log(checkProduct(product));
  * Console.log your result.  
 */
 
+function checkQuotient() {
+  return product * quotient;
+}
 
+console.log(checkQuotient());
 
 /*
  * #10
@@ -209,7 +210,15 @@ console.log(checkProduct(product));
  * Console.log your result.
 */ 
 
+var bango3 = 2;
+var bango4 = 5;
+var bango5 = 6;
 
+function addThenSubtract(num1, num2, num3) {
+  return subtract(num3,add(num1, num2));
+}
+
+console.log(addThenSubtract(bango3, bango4, bango5));
 
 
 /*
@@ -226,9 +235,11 @@ console.log(checkProduct(product));
  * Console.log your result.
 */ 
 
-
+function multiplyThenDivide(num1, num2, num3) {
+  return divide(num3, multiply(num1, num2));
 }
 
+console.log(multiplyThenDivide(bango3, bango4, bango5));
 
 /*
  * #12
@@ -242,7 +253,13 @@ console.log(checkProduct(product));
  *  This function `returns` back a string which represents someone's full name. Invoke this function by passing in your first  and last name into the function. Store the return value into a variable named `myFullName` and console.log this variable to show your result.
 */
 
+function createFullName(firstName, lastName) {
+  return firstName + " " + lastName;
+}
 
+var myFullName = createFullName("Kristine", "Orpilla");
+
+console.log(myFullName);
 
 /*
  * #13 
@@ -258,6 +275,11 @@ console.log(checkProduct(product));
  * Console.log your result.
  */
 
+function eatFood(firstName, lastName, food) {
+  return createFullName(firstName, lastName) + " " + "eats " + food + " " + "everyday for breakfast";
+}
+
+console.log(eatFood("Kristine", "Orpilla", "fried chicken"));
 
 
 /************** ENGAGE HYPERDRIVE **************/
@@ -273,7 +295,11 @@ console.log(checkProduct(product));
  * Console.log your result. 
 */
 
+function shoeSize(inches) {
+  return inches * 2.54;
+}
 
+console.log(shoeSize(2));
 
 /*
  * #15
@@ -285,7 +311,11 @@ console.log(checkProduct(product));
  * Example output: "BELIEVE YOU CAN AND YOU'RE HALFWAY THERE."
 */
  
+function allCaps(str) {
+  return (str.toUpperCase());
+}
 
+console.log(toUpperCase("hello world"));
 
 /*
  * #16
@@ -315,9 +345,3 @@ console.log(checkProduct(product));
  * Function - throwParty
  * Create a function named throwParty. This function will check the value stored in the `canDrink` variable in the previous exercise. If the value is true, it will return the message "Cheee Hoo! We going to da party!" If false, then it will return the message "Meh, see you at Starbucks." Store the return value to a variable named `canParty`. Console.log your result.
  */
-
-
-
-
-
-
