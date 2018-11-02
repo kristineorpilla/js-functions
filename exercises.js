@@ -312,10 +312,13 @@ console.log(shoeSize(2));
 */
  
 function allCaps(str) {
-  return (str.toUpperCase());
+	return str.toUppercase();
 }
 
-console.log(toUpperCase("hello world"));
+var str = "hello world";
+
+console.log(allCaps(toUppercase));
+
 
 /*
  * #16
