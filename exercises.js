@@ -368,4 +368,6 @@ function throwParty(canDrink) {
   }
 }
 
-console.log(throwParty(verifyDrinkingAge(canDrink)));
+var canParty = verifyDrinkingAge(canDrink);
+
+console.log(throwParty(canParty));
