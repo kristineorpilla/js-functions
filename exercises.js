@@ -312,12 +312,12 @@ console.log(shoeSize(2));
 */
  
 function allCaps(str) {
-	return str.toUppercase();
+	return str.toUpperCase();
 }
 
 var str = "hello world";
 
-console.log(allCaps(toUppercase));
+console.log(allCaps(str));
 
 
 /*
@@ -328,7 +328,11 @@ console.log(allCaps(toUppercase));
  * Console.log your result.
 */
 
+function oneCap(str) {
+    return str.charAt(0).toUpperCase() + str.slice(1);
+}
 
+console.log(oneCap(str));
 
 /*
  * #17
@@ -341,10 +345,22 @@ console.log(allCaps(toUppercase));
  * Store the return value to a variable named `canDrink`. Console.log your result.
  */
 
+function verifyDrinkingAge(age) {
+	return Boolean(age > 21);
+}
 
+var canDrink = 15;
+
+console.log(verifyDrinkingAge(canDrink));
 
 /**
  * #18
  * Function - throwParty
  * Create a function named throwParty. This function will check the value stored in the `canDrink` variable in the previous exercise. If the value is true, it will return the message "Cheee Hoo! We going to da party!" If false, then it will return the message "Meh, see you at Starbucks." Store the return value to a variable named `canParty`. Console.log your result.
  */
+
+ function throwParty(canDrink) {
+ 	return  if (true) { "Cheee Hoo! We going to da party!"} else {"Meh, see you at Starbucks."};
+ }
+
+ console.log(verifyDrinkingAge(throwParty(canDrink));
